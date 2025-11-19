@@ -7,7 +7,7 @@ import poly.entity.Favorite;
 import poly.util.JpaUtil;
 
 import java.util.List;
-
+//jjjjjj
 public class FavoriteDAOImpl implements FavoriteDAO {
 
     @Override
