@@ -18,11 +18,11 @@
             </h3>
             <p style="text-align: center;">Bạn đã đăng nhập thành công.</p>
             
-            <a href="${pageContext.request.contextPath}/logout" />" 
+            <a href="${pageContext.request.contextPath}/logout" />
                 Đăng xuất
             </a>
             
-            <a href="${pageContext.request.contextPath}/home" />" class="btn-home">
+            <a href="${pageContext.request.contextPath}/home" />
                 Về trang chủ
             </a>
         </c:if>
