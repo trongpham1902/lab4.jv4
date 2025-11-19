@@ -17,6 +17,7 @@ public interface VideoDAO {
      * @return List Video
      */
     List<Video> findAll();
+    List<Video> findByTitle(String keyword);
 
     /**
      * Tạo mới thực thể

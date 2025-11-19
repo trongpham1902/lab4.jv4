@@ -39,7 +39,16 @@ public class VideoDAOImpl implements VideoDAO {
             em.close();
         }
     }
-
+    @Override
+    public List<Video> findByTitle(String keyword) {
+        EntityManager em = JpaUtil.getEntityManager();
+        String jpql = "SELECT v FROM Video v WHERE v.title LIKE :keyword";
+        
+        TypedQuery<Video> query = em.createQuery(jpql, Video.class);
+        query.setParameter("keyword", "%" + keyword + "%"); // Thêm % để tìm kiếm
+        
+        return query.getResultList();
+    }
     @Override
     public void update(Video entity) {
         EntityManager em = JpaUtil.getEntityManager();

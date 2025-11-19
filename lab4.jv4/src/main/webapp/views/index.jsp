@@ -106,6 +106,10 @@ body {
 
 				<div class="note">(Đăng nhập bằng ID hoặc Email)</div>
 			</div>
+			<div>
+				<a href="${pageContext.request.contextPath}/video-search" class="btn btn-dark-gray"> Tìm kiếm video</a>
+
+			</div>
 		</div>
 	</div>
 </body>
